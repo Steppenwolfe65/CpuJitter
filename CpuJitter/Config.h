@@ -1,15 +1,23 @@
 #ifndef _CEXENGINE_CEXCONFIG_H
 #define _CEXENGINE_CEXCONFIG_H
 
+<<<<<<< HEAD
 // TODO: document this file
 // some of this file borrowed from crypto++ config.h file and Botan Buildh.in
 
 // common headers
+=======
+>>>>>>> origin/master
 #include <exception>
 #include <stdint.h>
 #include <stdio.h>
 #include <string>
 #include <vector>
+<<<<<<< HEAD
+=======
+
+// some of this file borrowed from crypto++ config.h file and Botan Buildh.in
+>>>>>>> origin/master
 
 // library version info
 const int CEX_VERSION_MAJOR = 1;
@@ -404,11 +412,17 @@ const unsigned int WORD_BITS = WORD_SIZE * 8;
 #if defined(CEX_COMPILER_MSC)
 #	define CEX_OPTIMIZE_IGNORE __pragma(optimize("", off))
 #elif defined(CEX_COMPILER_GCC) || defined(CEX_COMPILER_MINGW)
+<<<<<<< HEAD
 #	define CEX_OPTIMIZE_IGNORE _Pragma(TOSTRING(GCC optimize("O0")))
 #elif defined(CEX_COMPILER_CLANG)
 define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
 #elif defined(CEX_COMPILER_INTEL)
 #	define CEX_OPTIMIZE_IGNORE pragma optimize("", off) 
+=======
+#	define CEX_OPTIMIZE_IGNORE _Pragma(TOSTRING(GCC optimize ("O0")))
+#elif defined(CEX_COMPILER_CLANG)
+#	define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
+>>>>>>> origin/master
 #else
 #	define CEX_OPTIMIZE_IGNORE 0
 #endif
@@ -418,8 +432,12 @@ define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
 #	define CEX_OPTIMIZE_RESUME __pragma(optimize("", on))
 #elif defined(CEX_COMPILER_GCC) || defined(CEX_COMPILER_MINGW)
 #	define CEX_OPTIMIZE_RESUME _Pragma(TOSTRING(GCC pop_options))
+<<<<<<< HEAD
 #elif defined(CEX_COMPILER_INTEL)
 #	define CEX_OPTIMIZE_RESUME pragma optimize("", on) 
+=======
+#elif defined(CEX_COMPILER_CLANG)
+>>>>>>> origin/master
 #else
 #	define CEX_OPTIMIZE_RESUME 0
 #endif
