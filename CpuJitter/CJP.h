@@ -76,7 +76,7 @@ namespace CpuJitter
 	/// <remarks>
 	/// <description>Guiding Publications::</description>
 	/// <list type="number">
-	/// <item><description>CPU <a href="http://www.chronox.de/jent/doc/CPU-Jitter-NPTRNG.html#fig:CPU-Jitter-random-generator-seeding-openssl-default-drng">Time Jitter</a> Based Non-Physical True Random Number Generator.</description></item>
+	/// <item><description>CPU <a href="http://www.chronox.de/jent/doc/CPU-Jitter-NPTRNG.html">Time Jitter</a> Based Non-Physical True Random Number Generator.</description></item>
 	/// <item><description>NIST <a href="http://csrc.nist.gov/publications/drafts/800-90/draft-sp800-90b.pdf">SP800-90B</a>: Recommendation for the Entropy Sources Used for Random Bit Generation.</description></item>
 	/// <item><description>NIST <a href="http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf">Fips 140-2</a>: Security Requirments For Cryptographic Modules.</description></item>
 	/// <item><description>RFC <a href="http://www.ietf.org/rfc/rfc4086.txt">4086</a>: Randomness Requirements for Security.</description></item>
