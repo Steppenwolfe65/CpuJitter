@@ -406,7 +406,7 @@ const unsigned int WORD_BITS = WORD_SIZE * 8;
 #elif defined(CEX_COMPILER_GCC) || defined(CEX_COMPILER_MINGW)
 #	define CEX_OPTIMIZE_IGNORE _Pragma(TOSTRING(GCC optimize("O0")))
 #elif defined(CEX_COMPILER_CLANG)
-define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
+#	define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
 #elif defined(CEX_COMPILER_INTEL)
 #	define CEX_OPTIMIZE_IGNORE pragma optimize("", off) 
 #else
