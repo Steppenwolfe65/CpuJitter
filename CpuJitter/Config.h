@@ -5,6 +5,7 @@
 // some of this file borrowed from crypto++ config.h file and Botan Buildh.in
 
 // common headers
+#include <cstring>
 #include <exception>
 #include <stdint.h>
 #include <stdio.h>
