@@ -1,10 +1,11 @@
 #ifndef _CEXENGINE_CONFIG_H
 #define _CEXENGINE_CONFIG_H
 
+#include <exception>
+#include <stdint.h>
+#include <stdio.h>
 #include <string>
 #include <vector>
-#include <assert.h>
-#include <exception>
 
 // some of this file borrowed from crypto++ config.h file and Botan Buildh.in
 
@@ -386,9 +387,9 @@ const unsigned int WORD_BITS = WORD_SIZE * 8;
 #if defined(CEX_COMPILER_MSC)
 #	define CEX_OPTIMIZE_IGNORE __pragma(optimize("", off))
 #elif defined(CEX_COMPILER_GCC) || defined(CEX_COMPILER_MINGW)
-#	CEX_OPTIMIZE_IGNORE _Pragma(TOSTRING(GCC optimize ("O0")))
+#	define CEX_OPTIMIZE_IGNORE _Pragma(TOSTRING(GCC optimize ("O0")))
 #elif defined(CEX_COMPILER_CLANG)
-CEX_OPTIMIZE_IGNORE __attribute__((optnone))
+#	define CEX_OPTIMIZE_IGNORE __attribute__((optnone))
 #else
 //#	error compiler is not supported!
 #endif
@@ -397,7 +398,7 @@ CEX_OPTIMIZE_IGNORE __attribute__((optnone))
 #if defined(CEX_COMPILER_MSC)
 #	define CEX_OPTIMIZE_RESUME __pragma(optimize("", on))
 #elif defined(CEX_COMPILER_GCC) || defined(CEX_COMPILER_MINGW)
-#	CEX_OPTIMIZE_RESUME _Pragma(TOSTRING(GCC pop_options))
+#	define CEX_OPTIMIZE_RESUME _Pragma(TOSTRING(GCC pop_options))
 #elif defined(CEX_COMPILER_CLANG)
 #else
 //#	error compiler is not supported!
