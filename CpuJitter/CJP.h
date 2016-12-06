@@ -85,19 +85,19 @@ namespace CpuJitter
 	class CJP
 	{
 	private:
-		static constexpr size_t ACC_LOOP_BIT_MAX = 7;
-		static constexpr size_t ACC_LOOP_BIT_MIN = 0;
-		static constexpr size_t CLEARCACHE = 100;
-		static constexpr size_t DATA_SIZE_BITS = ((sizeof(uint64_t)) * 8);
-		static constexpr size_t FOLD_LOOP_BIT_MAX = 4;
-		static constexpr size_t FOLD_LOOP_BIT_MIN = 0;
-		static constexpr size_t LOOP_TEST_COUNT = 300;
-		static constexpr size_t MEMORY_ACCESSLOOPS = 256;
-		static constexpr size_t MEMORY_BLOCKS = 512;
-		static constexpr size_t MEMORY_BLOCKSIZE = 32;
-		static constexpr size_t MEMORY_SIZE = (MEMORY_BLOCKS * MEMORY_BLOCKSIZE);
-		static constexpr size_t OVRSMP_RATE_MAX = 128;
-		static constexpr size_t OVRSMP_RATE_MIN = 1;
+		const size_t ACC_LOOP_BIT_MAX = 7;
+		const size_t ACC_LOOP_BIT_MIN = 0;
+		const size_t CLEARCACHE = 100;
+		const size_t DATA_SIZE_BITS = ((sizeof(uint64_t)) * 8);
+		const size_t FOLD_LOOP_BIT_MAX = 4;
+		const size_t FOLD_LOOP_BIT_MIN = 0;
+		const size_t LOOP_TEST_COUNT = 300;
+		const size_t MEMORY_ACCESSLOOPS = 256;
+		const size_t MEMORY_BLOCKS = 512;
+		const size_t MEMORY_BLOCKSIZE = 32;
+		const size_t MEMORY_SIZE = (MEMORY_BLOCKS * MEMORY_BLOCKSIZE);
+		const size_t OVRSMP_RATE_MAX = 128;
+		const size_t OVRSMP_RATE_MIN = 1;
 
 		bool m_enableAccess;
 		bool m_enableDebias;
